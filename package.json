@@ -1,0 +1,24 @@
+{
+  "name": "dorothychang15.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorothychang15/dorothychang15.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorothychang15/dorothychang15.github.io/issues"
+  },
+  "homepage": "https://github.com/dorothychang15/dorothychang15.github.io#readme"
+}
