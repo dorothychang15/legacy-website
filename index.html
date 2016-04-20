@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Dorothy Chang</title>
+    <title>Dorothy Chang- Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,18 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+
+    <link href="css/demo.css" rel="stylesheet">
+
+    <link href="css/component.css" rel="stylesheet">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/portfolio.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,55 +39,49 @@
 
   <body>
 
-    <div class="site-wrapper background">
+  <div class = "cover-container">
+    <div class="masthead clearfix">
+      <div class="inner">
+        <h3 class="masthead-brand">dorothy chang</h3>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="#">home</a></li>
+              <li><a href="portfolio.html">portfolio</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </div>
 
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">dorothy chang</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">home</a></li>
-                  <li><a href="portfolio.html">portfolio</a></li>
-                  <li><a href="#">contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">hi, i'm dorothy.</h1>
-            <p class="lead">i'm a software engineer, (aspiring) world traveler, and coffee addict</p>
+    <div class="container demo-1">
+      <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+          <div class="main-title"> 
+            <h1>hi, i'm dorothy</h1>
+            <p class="lead">i'm a software engineer, coffee addict, and (aspiring) globetrotter</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-default">see where i've been</a>
             </p>
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Made with <a href="http://getbootstrap.com">Bootstrap</a></p>
-            </div>
-          </div>
-
+          
         </div>
-
+        </div>
       </div>
 
-    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/animate-colors-min.js"></script>
-
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/portfolio-bg.js"></script>
   </body>
 </html>
