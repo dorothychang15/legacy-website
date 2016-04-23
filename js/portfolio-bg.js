@@ -1,3 +1,5 @@
+/*[© Codrops 2014](http://www.codrops.com)*/
+
 (function() {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
@@ -80,7 +82,7 @@
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
-    
+
     function mouseMove(e) {
         var posx = posy = 0;
         if (e.pageX || e.pageY) {
