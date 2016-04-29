@@ -46,6 +46,7 @@ h1, p {
 }
 
 .login {
+  align: center;
   width: 50%;
   padding-top: 100px;
 }

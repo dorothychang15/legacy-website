@@ -9,7 +9,7 @@ ref.authWithPassword({
   remember: "sessionOnly"
 });
 
-$(function() {
+$('.loginbtn').on('click', function() {
   // Setup drop down menu
   $('.dropdown-toggle').dropdown();
  
