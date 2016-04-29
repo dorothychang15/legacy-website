@@ -9,26 +9,25 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Dorothy Chang- Portfolio</title>
+    <title>Dorothy Chang- Blog</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-
     <link href="css/demo.css" rel="stylesheet">
 
     <link href="css/component.css" rel="stylesheet">
 
     <link href="css/normalize.css" rel="stylesheet">
 
-    <link href="css/portfolio.css" rel="stylesheet">
-
     <link href="css/style.css" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,6 +38,7 @@
 
   <body>
 
+    
   <div class = "cover-container">
     <div class="masthead clearfix">
       <div class="inner">
@@ -46,49 +46,51 @@
           <nav>
             <ul class="nav masthead-nav">
               <li><a href="index.html">home</a></li>
-              <li class="active"><a href="#">portfolio</a></li>
+              <li><a href="portfolio.html">portfolio</a></li>
               <li><a href="contact.html">contact</a></li>
-              <li><a href="blog.html">blog</a></li>
+              <li class="active"><a href="#">blog</a></li>
             </ul>
-          </nav>
+            <div class="dropdown">
+              <button type="button" class="btn btn-default navbar-btn" data-toggle="dropdown">Login</button>
+
+              <div class="dropdown-menu" style="padding: 10px; background: #ddd">
+                <form action="" role="form">
+                  <div class="form-group">
+                    <label for="user">User</label>
+                    <input type="text" class="form-control" id="user" placeholder="User">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </form>
+              </div>
+            </div>
       </div>
     </div>
   </div>
 
-    <div class="container demo-1">
-      <div class="content">
-        <div id="large-header" class="large-header">
-          <canvas id="demo-canvas"></canvas>
-          <div class="main-title"> 
-            <h1>Portfolio</h1>
-            <p>Here are some of my projects. </p>
-          </div>
-          
-        </div>
-        </div>
-      </div>
 
-    <div class = "project-title">
-      <h2>battleship game</h2>
-      <p class="lead">I created a Battleship game in which users play against an enemy AI (Artificial Intelligence). Users can place their own battleships on a GUI (Graphical User Interface) that represents the game board and is updated in real time. It includes user instructions, a constantly updated status display, and a leaderboard that keeps track of users with the highest scores. Built the game using Java and Swing, and incorporates complex search, 2D arrays, parsing and file I/O, and J-Unit testing. </p>
-    </div>
 
-    <div class = "project-title">
-      <h2>photosort</h2>
-      <p class="lead">I am currently developing a photo organization app, written in Java, to help users organize shopping lists, laundry, etc. Users can select photos from gallery or use the camera from within the app. Planning to implement user accounts, cloud storage of user data and photos, and photo cropping. </p>
-    </div>
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/rAF.js"></script>
-    <script src="js/portfolio-bg.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="js/blog.js"></script>
+    <script>
+  // popover demo
+    $('button[data-toggle=popover]').popover({ 
+        html : true,
+        //trigger: "click",
+        content: function() {
+          return $('#popover_content_wrapper').html();
+        }
+    });
+  </script>
   </body>
 </html>
