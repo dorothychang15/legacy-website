@@ -6,9 +6,9 @@ ref.on("child_added", function (snapshot) {
   var data = snapshot.val();
   var title = data.title;
   var text = data.text;
-  var textElement = $("<li>");
-  var titleElement = $("<h3></h3>")
+  var textElement = $("<span>");
+  var titleElement = $("<h3>")
   titleElement.text(title);
-  textElement.text(message).prepend(titleElement);
+  textElement.text(text).prepend(titleElement);
   $("#blogposts").append(textElement);
 });
