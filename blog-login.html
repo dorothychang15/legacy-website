@@ -9,26 +9,27 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Dorothy Chang- Contact</title>
+    <title>Dorothy Chang- Blog</title>
+
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-
     <link href="css/demo.css" rel="stylesheet">
 
     <link href="css/component.css" rel="stylesheet">
 
     <link href="css/normalize.css" rel="stylesheet">
 
-    <link href="css/portfolio.css" rel="stylesheet">
-
     <link href="css/style.css" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,6 +40,7 @@
 
   <body>
 
+    
   <div class = "cover-container">
     <div class="masthead clearfix">
       <div class="inner">
@@ -47,70 +49,73 @@
             <ul class="nav masthead-nav">
               <li><a href="index.html">home</a></li>
               <li><a href="portfolio.html">portfolio</a></li>
-              <li class="active"><a href="#">contact</a></li>
+              <li><a href="contact.html">contact</a></li>
               <li><a href="blog.html">blog</a></li>
+              <li class="active"><a href="#">login</a></li>
             </ul>
           </nav>
       </div>
     </div>
   </div>
 
-  <div class="container demo-1">
-    <div class="content">
-      <div id="large-header" class="large-header">
-        <canvas id="demo-canvas"></canvas>
-        <div class="main-title"> 
-          <h1>contact me</h1>
-          
-          <div class="container">
+  <div class="container login" id="logincontainer">
 
-          <form action="https://formspree.io/dorothyichang@gmail.com" method="POST">
+    <form id="login-form">
 
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon" id="basic-addon1">name</span>
-              <input type="text" class="form-control" placeholder="your name" aria-describedby="basic-addon1" name ="name">
-            </div>
-
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon" id="basic-addon1">email</span>
-              <input type="email" class="form-control" placeholder="your email" aria-describedby="basic-addon1" name ="email">
-            </div>
-
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon" id="basic-addon1">message</span>
-              <input type="text" class="form-control" placeholder="write your message here!" aria-describedby="basic-addon1" name ="message">
-            </div>
-
-            <input type="hidden" name="_next" value="contact-sent.html" />
-
-            <div> 
-              <p>
-                <button type="submit" class="btn btn-default" value="Send">send</button>
-              </p>
-            </div>
-
-            </form>
-        
-          </div>
-
-        </div>
-      
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="basic-addon1">Email</span>
+        <input type="email" class="form-control" placeholder="example@email.com" aria-describedby="basic-addon1" name ="email">
       </div>
-    </div>
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="basic-addon1">Password</span>
+        <input type="password" class="form-control" placeholder="password" aria-describedby="basic-addon1" name ="password">
+      </div>
+
+      <div> 
+        <p>
+          <button type="submit" id="loginbtn" class="btn btn-default btn-lg" value="submit">Log in</button>
+        </p>
+      </div>
+
+    </form>
+
   </div>
 
+  <div class="container post" id="postcontainer" style="visibility:hidden;">
 
+  <form id="post-form">
+
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon" id="basic-addon1">Title</span>
+      <input type="text" class="form-control" placeholder="Blog Post Title" aria-describedby="basic-addon1" id="titleinput">
+    </div>
+
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon" id="basic-addon1">Text</span>
+      <input type="text" class="form-control" placeholder="text" aria-describedby="basic-addon1" id="textinput">
+    </div>
+
+    <div> 
+      <p>
+        <button type="submit" class="btn btn-default btn-lg" id="postbtn" value="submit">Post</button>
+      </p>
+    </div>
+
+  </form>
+
+</div>
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/rAF.js"></script>
-    <script src="js/portfolio-bg.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="js/blog-login.js"></script>
   </body>
 </html>

@@ -1,20 +1,14 @@
-var Firebase = require("firebase");
+require(['https://cdn.firebase.com/js/client/2.4.2/firebase.js'], function (firebase) {});
 
 var ref = new Firebase("https://crackling-heat-5677.firebaseio.com/");
 
-ref.authWithPassword({
-  email    : "dorothyichang@gmail.com",
-  password : "Starbucks123"
-}, function(error, authData) { /* Your Code */ }, {
-  remember: "sessionOnly"
-});
-
-$('.loginbtn').on('click', function() {
-  // Setup drop down menu
-  $('.dropdown-toggle').dropdown();
- 
-  // Fix input element click problem
-  $('.dropdown input, .dropdown label').click(function(e) {
-    e.stopPropagation();
-  });
+ref.on("child_added", function (snapshot) {
+  var data = snapshot.val();
+  var title = data.title;
+  var text = data.text;
+  var textElement = $("<li>");
+  var titleElement = $("<h3></h3>")
+  titleElement.text(title);
+  textElement.text(message).prepend(titleElement);
+  $("#blogposts").append(textElement);
 });
