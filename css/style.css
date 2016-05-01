@@ -26,6 +26,12 @@ a:hover {
   text-color: black;
 }
 
+.firepad {
+  width: 700px;
+  height: 450px;
+  background-color: #999; 
+}
+
 /*
  * Base structure
  */

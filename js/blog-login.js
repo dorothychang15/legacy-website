@@ -49,5 +49,5 @@ $("#postbtn").on("click", function (e) {
   $("#logincontainer")[0].style.visibility="hidden";
   $("#postcontainer")[0].style.visibility="visible";
   e.preventDefault();
-  console.log("post saved");
+  $("#successmessage")[0].style.visibility="visible";
 });
