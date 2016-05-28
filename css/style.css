@@ -26,12 +26,6 @@ a:hover {
   text-color: black;
 }
 
-.firepad {
-  width: 700px;
-  height: 450px;
-  background-color: #999; 
-}
-
 /*
  * Base structure
  */
@@ -99,7 +93,7 @@ h1, p {
   padding-right: 0;
   padding-left: 0;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: none;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
