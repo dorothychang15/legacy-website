@@ -26,6 +26,32 @@ a:hover {
   text-color: black;
 }
 
+.main-title > a, a:hover, a:focus {
+  text-decoration:none;
+}
+
+.section-title > h2 {
+  font-family: "Londrina Outline";
+  text-align: left;
+  text-indent: 100px;
+  font-size: 60px;
+}
+
+.blog-post-title {
+  font-family: "Crafty Girls";
+  font-size: 35px;
+}
+
+.main-title > h1 {
+  font-family: "Londrina Outline";
+  font-size: ;
+}
+
+.close {
+  font-size: 50px;
+  line-height: 0.5;
+}
+
 /*
  * Base structure
  */
