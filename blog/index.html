@@ -7,80 +7,118 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
 
-    <title>Dorothy Chang</title>
+    <title>Dorothy Chang- Blog</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
 
-    <link href="css/demo.css" rel="stylesheet">
+    <link href="../css/demo.css" rel="stylesheet">
 
-    <link href="css/component.css" rel="stylesheet">
+    <link href="../css/component.css" rel="stylesheet">
 
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
 
-    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="../css/portfolio.css" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline:200,400,800' rel='stylesheet' type='text/css'>
 
-    <link href="css/navbar-fixed-top.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="../css/navbar-fixed-top.css" rel="stylesheet">
+    
   </head>
 
   <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class = "cover-container">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <h3 class="masthead-brand">dorothy chang</h3>
         </div>
         <div id="navbar">
           <ul class="nav masthead-nav">
-              <li class="active"><a href="#">home</a></li>
-              <li><a href="portfolio.html">portfolio</a></li>
-              <li><a href="blog.html">blog</a></li>
-              <li><a href="contact.html">contact</a></li>
+              <li><a href="../index.html">home</a></li>
+              <li><a href="../portfolio.html">portfolio</a></li>
+              <li class="active"><a href="#">blog</a></li>
+              <li><a href="../contact.html">contact</a></li>
             </ul>
           </nav>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <h1> welcome to my blog! </h1>
+    <div class="container demo-1">
+      <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+          <div class="main-title"> 
+            <h1>welcome to my blog!</h1>
+            <p>check it out <a href="#archives">↓</a></p>
+          </div>
+          
+        </div>
+        </div>
+      </div>
 
-    <ul class="posts">
 
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+      <h3> <a name="archives"></a></h3>
+      <h1 style="visibility:hidden">placeholder</h1>
+      <h1 style="visibility:hidden">placeholder</h1>
+      <h1 style="visibility:hidden">placeholder</h1>
+      <div class="section-title">
+        <h2 style="padding-left:100px">archives</h2>
+      </div>
 
-  
+      <div class="container">
 
+       <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle blog-img" src="../img/image025.PNG">
+          <h3> <a href="posts/2016-06-22.html">🏢internship update: i did a thing!🏢</a></h3>
+          <h5 class="blog-post-meta">June 22, 2016</h5>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle blog-img" src="../img/sushi.JPG">
+          <h3> <a href="posts/2016-06-08.html">☀back in la: home sweet home☀</a></h3>
+          <h5 class="blog-post-meta">June 8, 2016</h5>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle blog-img" src="../img/femmehacks.JPG">
+          <h3> <a href="posts/2016-02-20.html">👧femmehacks 2016: macarons and polaroids👧</a></h3>
+          <h5 class="blog-post-meta">February 20, 2016</h5>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle blog-img" src="../img/hknight.JPG">
+          <h3> <a href="posts/2016-01-07.html">❄2 weeks, 3 countries: winter break 2016❄</a></h3>
+          <h5 class="blog-post-meta">January 7, 2016</h5>
+        </div><!-- /.col-lg-4 -->
+        
+      </div><!-- /.row -->
+
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/rAF.js"></script>
-    <script src="js/portfolio-bg.js"></script>
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/TweenLite.min.js"></script>
+    <script src="../js/EasePack.min.js"></script>
+    <script src="../js/rAF.js"></script>
+    <script src="../js/portfolio-bg.js"></script>
   </body>
 </html>

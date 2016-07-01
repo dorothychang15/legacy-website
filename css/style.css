@@ -38,19 +38,25 @@ a:hover {
 }
 
 .blog-post-title {
-  font-family: "Crafty Girls";
-  font-size: 35px;
+  font-family: "Londrina Sketch";
+  font-weight: thick;
+  font-size: 50px;
 }
 
 .main-title > h1 {
   font-family: "Londrina Outline";
-  font-size: ;
 }
 
 .close {
   font-size: 50px;
   line-height: 0.5;
 }
+
+.blog-img {
+  width: 140px;
+  height: 140px;
+}
+
 
 /*
  * Base structure
