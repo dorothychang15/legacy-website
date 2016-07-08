@@ -31,6 +31,12 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline:200,400,800' rel='stylesheet' type='text/css'>
 
     <link href="../css/navbar-fixed-top.css" rel="stylesheet">
+
+    <script>
+    var shiftWindow = function() { scrollBy(0, -50) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+  </script>
     
   </head>
 
@@ -60,7 +66,7 @@
           <canvas id="demo-canvas"></canvas>
           <div class="main-title"> 
             <h1>welcome to my blog!</h1>
-            <p>check it out <a href="#archives">↓</a></p>
+            <p class="lead">check it out <a href="#archives">↓</a></p>
           </div>
           
         </div>
@@ -69,9 +75,9 @@
 
 
       <h3> <a name="archives"></a></h3>
+      <!-- <h1 style="visibility:hidden">placeholder</h1>
       <h1 style="visibility:hidden">placeholder</h1>
-      <h1 style="visibility:hidden">placeholder</h1>
-      <h1 style="visibility:hidden">placeholder</h1>
+      <h1 style="visibility:hidden">placeholder</h1> -->
       <div class="section-title">
         <h2 style="padding-bottom:50px">archives</h2>
       </div>

@@ -10,12 +10,10 @@
 }
 
 .demo-1 .large-header {
-	background-image: url('../img/demo-1-bg.jpg');
-	opacity: 0.5;
+	opacity: 1;
 }
 
 .demo-2 .large-header {
-	background-image: url('../img/demo-2-bg.jpg');
 	background-position: center bottom;
 }
 

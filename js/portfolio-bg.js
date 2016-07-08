@@ -1,4 +1,4 @@
-/*[© Codrops 2014](http://www.codrops.com)*/
+/*Source: [© Codrops 2014](http://www.codrops.com)*/
 
 (function() {
 

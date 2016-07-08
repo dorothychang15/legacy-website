@@ -26,8 +26,12 @@ a:hover {
   text-color: black;
 }
 
-.main-title > a, a:hover, a:focus {
+.down-arrow > a, a:hover, a:focus {
   text-decoration:none;
+}
+
+.resume > a:hover, a:focus {
+  text-decoration: underline;
 }
 
 .section-title > h2 {
@@ -54,6 +58,10 @@ a:hover {
 .blog-img {
   width: 140px;
   height: 140px;
+}
+
+.lead {
+  font-size:21px;
 }
 
 
