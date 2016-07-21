@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Dorothy Chang- About Me</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <link href="css/demo.css" rel="stylesheet">
+
+    <link href="css/component.css" rel="stylesheet">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/portfolio.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline:200,400,800' rel='stylesheet' type='text/css'>
+
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+
+    <style>
+      a:focus,
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        height: 60px;
+        width: auto;
+        margin-left:15px;
+        margin-right:15px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class = "cover-container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h3 class="masthead-brand">dorothy chang</h3>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav masthead-nav">
+              <li><a href="index.html">home</a></li>
+              <li><a href="portfolio.html">portfolio</a></li>
+              <li class="active"><a href="#">about</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="blog/index.html">blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+
+    <div class="container demo-1">
+      <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+          <div class="main-title"> 
+            <h1>about me</h1>
+            <p class="lead">A bit of background <a href="#about-me">↓</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3> <a name="about-me"></a></h3>
+      <h3 style="visibility:hidden">placeholder</h3>
+      <h3 style="visibility:hidden">placeholder</h3>
+    <div class="section-title">
+      <h2>background</h2>
+    </div>
+
+    <div class = "project-title col-sm-8 col-sm-offset-2">
+      <p class="lead">Hi! I'm a sophomore studying computer science at the University of Pennsylvania. I was born and raised in southern California, surrounded by palm trees and year-round sunshine (seriously). At risk of sounding like every 19 year old girl ever, I adore my dog (pictured below), anything from Starbucks, and sushi. I'm passionate about software engineering, empowering women in tech, and innovating for sustainability. I love to explore new places, new foods, and new technologies, and <a href="blog.html">my blog</a> is where I write about all three. Read about my projects and work experience <a href="portfolio.html">here</a>, or <a href="contact.html">say hi!</a> </p>
+    </div>
+
+    <row>
+      <img class="img" src="img/sd wave.GIF" style="height:250px; width:auto">
+      <img class="img" src="img/hkts.JPG" style="height:250px; width:auto">
+      <img class="img" src="img/jackie.JPG" style="height:250px; width:auto">
+    </row>
+
+    <div class="container">
+    <div class="section-title" style="margin-bottom:50px">
+        <h2>elsewhere</h2>
+    </div>
+      <row>
+        <a href="https://www.facebook.com/dorothychang15" style="margin-left:45px"><img class="img" src="img/soc_med/facebook.PNG"></a>
+        <a href="https://www.instagram.com/dorolikestoeat/"><img class="img" src="img/soc_med/instagram.PNG"></a>
+        <a href="https://www.pinterest.com/dorothypins15/"><img class="img" src="img/soc_med/pinterest.PNG"></a>
+        <a href="https://github.com/dorothychang15"><img class="img" src="img/soc_med/github.PNG"></a>
+      </row>
+    </div>
+
+    <div id="footer">
+      <h3 style="visibility:hidden">placeholder</h3>
+      <h3 style="visibility:hidden">placeholder</h3>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/portfolio-bg.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e) {
+         var h = $('nav').height() + 20;
+         $('demo-1').animate({ paddingTop: h });
+      });
+    </script>
+  </body>
+</html>
