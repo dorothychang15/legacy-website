@@ -28,38 +28,46 @@
 
     <link href="css/style.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline:200,400,800' rel='stylesheet' type='text/css'>
 
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
 
   </head>
 
-  <body>
+ <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class = "cover-container">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <h3 class="masthead-brand">dorothy chang</h3>
         </div>
-        <div id="navbar">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav masthead-nav">
               <li class="active"><a href="#">home</a></li>
               <li><a href="portfolio.html">portfolio</a></li>
-              <li><a href="blog/index.html">blog</a></li>
+              <li><a href="about-me.html">about</a></li>
               <li><a href="contact.html">contact</a></li>
+              <li><a href="blog/index.html">blog</a></li>
             </ul>
-          </nav>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+  </div>
 
-    <div class="container demo-1">
+  <div class="container demo-1">
       <div class="content">
         <div id="large-header" class="large-header">
           <canvas id="demo-canvas"></canvas>
           <div class="main-title"> 
             <h1>hi, i'm dorothy</h1>
-            <p class="lead">I'm a software engineer, coffee addict, and (aspiring) globetrotter</p>
+            <p class="lead">Aspiring software engineer, coffee connoisseur, globetrotter</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal">see where I've been</a>
             </p>
@@ -67,7 +75,8 @@
           
         </div>
       </div>
-    </div>
+  </div>
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
