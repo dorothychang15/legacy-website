@@ -14,7 +14,7 @@ ref.limitToLast(10).on("value", function (snapshot) {
   var title = data.title;
   var text = data.text;
   var textElement = $("<span>");
-  var titleElement = $("<h3>")
+  var titleElement = $("<h3>");
   titleElement.text(title);
   textElement.text(text).prepend(titleElement);
   $("#blogposts").prepend(textElement);
