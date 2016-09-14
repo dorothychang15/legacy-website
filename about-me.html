@@ -32,6 +32,7 @@
 
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
 
+
     <style>
       a:focus,
       a:hover {
@@ -42,6 +43,15 @@
         width: auto;
         margin-left:15px;
         margin-right:15px;
+      }
+      .table {
+        border-bottom:0px !important;
+      }
+      .table th, .table td {
+        border: 1px !important;
+      }
+      .fixed-table-container {
+        border:0px !important;
       }
     </style>
 
@@ -97,37 +107,26 @@
       <p class="lead">Hi! I'm a sophomore studying computer science at the University of Pennsylvania. I was born and raised in southern California, surrounded by palm trees and year-round sunshine (seriously). Unhealthy obsessions include my dog (picture below), chocolate covered almonds from Starbucks, and sushi. I'm passionate about software engineering, empowering women in tech, and innovating for sustainability, and I love to explore new places, new foods, and new technologies. Read about my projects and work experience <a href="portfolio.html">here</a>, or <a href="contact.html">say hi!</a> </p>
     </div>
 
-    <div class="container">
-	    <div class="row">
-	      <div class="col-sm-4 offset-md-1">
-	      <img class="img" src="img/sd_wave.GIF" style="height:250px; width:auto">
-	      </div>
-	      <div class="col-sm-3">
-	      <img class="img" src="img/hkts.JPG" style="height:250px; width:auto">
-	      </div>
-	      <div class="col-sm-3">
-	      <img class="img" src="img/jackie.JPG" style="height:250px; width:auto">
-	      </div>
-	    </div>
-    </div>
+    <table class="table borderless">
+      <tr>
+        <td><img class="img" src="img/sd_wave.GIF" style="height:250px; width:auto"></td>
+        <td><img class="img" src="img/ny.JPG" style="height:250px; width:auto"></td>
+        <td><img class="img" src="img/jackie.JPG" style="height:250px; width:auto"></td>
+      </tr>
+    </table>
 
     <div class="section-title" style="margin-bottom:50px">
         <h2>elsewhere</h2>
     </div>
-    <div class="row">
-    	<div class="col-md-3">
-    		<a href="https://www.facebook.com/dorothychang15" style="margin-left:45px"><img class="img" src="img/soc_med/facebook.PNG"></a>
-    	</div>
-    	<div class="col-md-3">
-        	<a href="https://www.instagram.com/dorolikestoeat/"><img class="img" src="img/soc_med/instagram.PNG"></a>
-        </div>
-        <div class="col-md-3">
-        	<a href="https://www.pinterest.com/dorothypins15/"><img class="img" src="img/soc_med/pinterest.PNG"></a>
-        </div>
-        <div class="col-md-3">
-        	<a href="https://github.com/dorothychang15"><img class="img" src="img/soc_med/github.PNG"></a>
-        </div>
-    </div>
+    <table class="table borderless">
+      <tr>
+    		  <td><a href="https://www.facebook.com/dorothychang15"><img class="img" src="img/soc_med/facebook.PNG" alt="Facebook"></a></td>
+        	<td><a href="https://www.instagram.com/dorolikestoeat/"><img class="img" src="img/soc_med/instagram.PNG" alt="Instagram"></a></td>
+        	<td><a href="https://www.pinterest.com/dorothypins15/"><img class="img" src="img/soc_med/pinterest.PNG" alt="Pinterest"></a></td>
+         	<td><a href="https://github.com/dorothychang15"><img class="img" src="img/soc_med/github.PNG" alt="Github"></a></td>
+          <td><a href="https://linkedin.com/in/dorothy-chang"><img class="img" src="img/soc_med/linkedin.PNG" alt="Github"></a></td>
+      </tr>
+    </table>
 
     <div id="footer">
       <h3 style="visibility:hidden">placeholder</h3>
