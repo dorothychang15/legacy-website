@@ -1,11 +1,27 @@
 body {
   padding-top: 100px;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
+
 .project-title {
 	padding: 40px 100px;
 	text-align: left;
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  float: left;
+  width: 100%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  text-align: left;
 }
