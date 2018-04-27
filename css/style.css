@@ -36,6 +36,10 @@ a:hover {
   text-decoration: underline;
 }
 
+body {
+  font-family: 'Quicksand';
+}
+
 .section-title > h2 {
   font-family: "Londrina Outline";
   text-align: center;
@@ -52,9 +56,8 @@ a:hover {
 }
 
 .lead {
-  font-size:16px;
+  font-size:20px;
 }
-
 
 /*
  * Base structure
@@ -63,7 +66,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 }
 body {
   color: #fff;
