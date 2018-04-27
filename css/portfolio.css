@@ -25,3 +25,11 @@ body {
   border: 0;
   text-align: left;
 }
+
+.card-title {
+  height: 108px;
+}
+
+.card-title.tall {
+  height: 128px;
+}

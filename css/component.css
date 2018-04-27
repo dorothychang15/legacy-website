@@ -2,7 +2,7 @@
 .large-header {
 	position: relative;
 	width: 100%;
-	background: #333;
+	background: #fff;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
@@ -29,7 +29,8 @@
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	color: #f9f1e9;
+	color: #686868;
+	text-shadow: none;
 	top: 25%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
