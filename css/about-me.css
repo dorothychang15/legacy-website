@@ -1,31 +1,47 @@
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: table;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-li {
-  display: table-cell;
-}
-
-/*img {
-  display: block;
-  width: 100%;
+img {
   height: auto;
-}*/
+  width: 250px;
+}
 
 a:focus,
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-img {
-  height: 60px;
+.socials {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.table {
+  border-bottom:0px !important;
+}
+.table th, .table td {
+  border: 1px !important;
+}
+.fixed-table-container {
+  border:0px !important;
+}
+
+.social {
+  height: 50px;
   width: auto;
-  margin-left:15px;
-  margin-right:15px;
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+  max-width: 100%;
 }
